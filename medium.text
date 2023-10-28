@@ -1,0 +1,199 @@
+//MEDIUM PROBLEMS
+
+//Task-01
+
+//1,declare variables with no values
+
+
+var a;
+var b;
+var c;
+var d;
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//2,get value of the variable myvar as output
+
+
+var myvar=10;
+console.log(myvar);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+
+//3,declare variables and print values in multiple lines
+
+
+var firstName="Ajay Elavarasan";
+var lastName="Murugan";
+var martialStatus="Single";
+var country="India";
+console.log(firstName);
+console.log(lastName);
+console.log(martialStatus);
+console.log(country);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//4,declare variables and print values in single line
+
+
+let fName="Ajay Elavarasan",
+    lName="Murugan",
+    Status="Single",
+    Country="India"
+console.log(fName,lName,"is",Status,"from",Country);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//6,string to integer
+
+//parseInt()
+//Plus sign(+)
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//7,truthy and falsey values
+
+// truthy:
+
+// 1,boolean value 'true' is always truthy
+// 2,A non empty string is truthy
+// 3,A non zero number is truthy
+// 4,A empty array is truthy
+// 5,A empty Object is truthy
+// 6,A empty function is truthy
+
+falsey:
+
+// 1,boolean value 'false' is always falsey
+// 2,A empty string is falsey
+// 3,the zero number is falsey
+// 4,the value null is falsey
+// 5,the value 'undefined' is falsey
+// 6,the special value 'NAN' is falsey
+
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//Task-02
+
+//1,square of a number:
+
+var num=12;
+let square=Math.pow(num,2);
+console.log(square);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//2,swapping two numbers
+
+let no1=2;
+let no2=5;
+console.log("before swapping",no1,no2);
+[no1,no2]=[no2,no1];
+
+console.log("after swapping",no1,no2);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//3,addition of 3 numbers
+
+let n1=5;
+let n2=6;
+let n3=4;
+console.log(n1+n2+n3);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//4,celcius to fahrenheit
+
+let celcius=30;
+let fahrenheit=celcius*1.8;
+console.log("temperature is",fahrenheit+32);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//5,converting meters to miles
+
+let meters=10000;
+let miles=meters*0.00062137;
+let mile=miles.toFixed(3);
+console.log("miles= ",mile);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//6,pounds to kilograms
+
+let pounds=510;
+let kg=pounds*0.453592;
+let kilogram=kg.toFixed(3);
+console.log("kilogram= ",kilogram);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//7,Calculate Batting Average
+
+let scores=[55,70,20,1,0,87,32,26,12,5];
+let totalruns=0;
+for(var i=0;i<scores.length;i++){
+    totalruns=totalruns+scores[i];
+    average=totalruns/scores.length;
+   
+}
+console.log("average is ",average);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//8,Calculate five test scores and print their average
+
+var marks=[95,88,93,86,100];
+var totalmarks=0;
+for(var i=0;i<marks.length;i++){
+    totalmarks=totalmarks+marks[i];
+    averagemark=totalmarks/marks.length;
+}
+console.log("average mark is ",averagemark);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//9,Power of any number x ^ y
+
+let x=4;
+let y=2;
+let power=Math.pow(x,y);
+console.log(power);
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//10,Calculate Simple Interest
+
+function simpleInterest(principle,rate,time){
+    var calculateSimpleinterest=(principle*rate*time)/100;
+    return calculateSimpleinterest;
+}
+var result=simpleInterest(10000,4,2);
+console.log("S.I is ",result);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+
+//11,Calculate area of an equilateral triangle
+
+function area(side){
+    var areaOftriangle=(1.732/4)*side*side;
+    return areaOftriangle;
+}
+var op=area(5);
+console.log("area of equilateral triangle is ",op);
+
+//-------------------------------------------------------------------------------------------------------------------------------------
