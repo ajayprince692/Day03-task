@@ -3,9 +3,15 @@
 
 let obj1={name:"Person 1",age:5};
 let obj2={age:5,name:"Person 1"};
-var sortedObj1=JSON.stringify(Object.keys(obj1).sort());
-var sortedObj2=JSON.stringify(Object.keys(obj2).sort());
-console.log(sortedObj1==sortedObj2);
+var json1=JSON.stringify(obj1);
+var json2=JSON.stringify(obj2);
+if(json1==json2){
+    console.log("both are same");
+}
+else{
+    console.log("both are different");
+}
+ 
 //-------------------------------------------------------------------------------------------------------------------------------------
 
 // Question no-2
